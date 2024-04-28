@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css">
+  <title>Acasă</title>
+</head>
+<body>
+  <header>
+    <img src="/header/ue.jpeg" alt="logo-header" class="logo-img">
+    <img src="/header/guvern.jpeg" alt="logo-header" class="logo-img">
+    <img src="/header/regio.png" alt="logo-header" class="logo-img-regio">
+    <img src="/header/instrumente.jpeg" alt="logo-header" class="logo-img">
+    <img src="/header/muncamplung.png" alt="logo-header" class="logo-img">
+  </header>
+  <nav class="navbar-full">
+    <ul class="navbar">
+      <li><a href="/index.html" class="active">Acasă</a></li>
+      <li><a href="frontend/obiectivgeneral.html">Obiectiv General</a></li>
+      <li><a href="/frontend/obiectivespecifice.html">Obiective Specifice</a></li>
+      <li><a href="/frontend/rezultate.html">Rezultate Obţinute</a></li>
+      <li><a href="/frontend/contact.html">Contact</a></li>
+    </ul>
+    <div class="toggle-button">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="dropdown">
+      <ul>
+      <li><a href="/index.html" class="active-phone">Acasă</a></li>
+      <li><a href="/frontend/obiectivgeneral.html">Obiectiv General</a></li>
+      <li><a href="/frontend/obiectivespecifice.html">Obiective Specifice</a></li>
+      <li><a href="/frontend/rezultate.html">Rezultate Obţinute</a></li>
+      <li><a href="/frontend/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="title">
+    <h1>Finalizare proiect: „Lucrări de consolidare a terenului în zona de risc Chilii“
+      Cod SMIS 155489</h1>
+    </div>
+    <img src="/img/acasa.jpg" alt="centrul-de-servicii-sociale-sfantul-nicolae" class="main-img">
+    <div class="info">
+      <h3>Informaţii generale</h3>
+      <p>U.A.T. Municipiul Câmpulung, în calitate de beneficiar, anunță finalizarea implementării proiectului: „Lucrări de consolidare a terenului în zona de risc Chilii“, Cod SMIS 155489.
+        Proiectul a fost finanțat prin Regio - Programul Operaţional Regional 2014-2020, Axa Prioritară 9 - Sprijinirea regenerării economice și sociale a comunităților defavorizate din mediul urban, Prioritatea de investiții 9.1 - Dezvoltarea Locală plasată sub responsabilitatea comunității, Obiectiv Specific 9.1 - Reducerea numărului de persoane aflate în risc de sărăcie și excluziune socială, prin măsuri integrate, în baza contractului de finanțare nr. 7944 / 22.09.2022.</p>
+    </div>
+  </main>
+    <footer>
+      <div class="down-info">
+        <div class="fonduri">
+        <p>Pentru informații detaliate despre celelate programe cofinanțate <br> de Uniunea Europeană, vă invităm să vizitați <a href="https://www.fonduri-ue.ro/">www.fonduri-ue.ro</a></p>
+        </div>
+        <p class="investim">Investim în viitorul tău! Proiect confinațat din Fondul European de Dezvoltare Regională prin ProgramulOperațional Regional 2014-2020</p>
+        
+      </div>
+      <div class="linie-relative">
+      <img src="/img/linie.jpg" alt="linie" class="linie">
+      </div>
+      <h4 class="contact"><a href="https://www.inforegio.ro/ro/">www.inforegio.ro</a>︱<a href="https://www.facebook.com/inforegio.ro/">facebook.com/inforegio.ro</a></h4>
+      <p class="continut">Conținutul acestui material nu reprezintă în mod obligatoriu poziția oficială a Uniunii Europene sau a Guvernului României</p>
+      <h3 class="copyright">Website realizat de <a href="https://lemings.ro/">Lemings.ro</a></h3>
+    </footer>
+    <script>
+      const toggleBtn = document.querySelector('.toggle-button');
+      const toggleBtnIcon = document.querySelector('.toggle-button i');
+      const dropDown = document.querySelector('.dropdown');
+
+      toggleBtn.onclick = function () {
+      dropDown.classList.toggle('open');
+      };
+    </script>
+</body>
+</html>

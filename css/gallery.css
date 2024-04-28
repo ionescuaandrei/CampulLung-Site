@@ -1,0 +1,21 @@
+.gallery{
+  margin: 10px auto;
+  width: 1200px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.column {
+  width: calc(25% - 10px); /* 25% per image, adjust the 10px if using margin/padding */
+  display: block; /* Makes sure img tags behave as block elements, allowing width adjustments */
+}
+
+img.column{
+  width: 250px;
+  border-radius: 20px;
+}
