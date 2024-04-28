@@ -9,6 +9,8 @@
 
 body{
   background-color:#F7F7F7;
+  opacity: 1; /* Start fully opaque */
+  transition: opacity 0.5s linear;
 }
 
 header{

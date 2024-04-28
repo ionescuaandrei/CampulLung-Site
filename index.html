@@ -74,6 +74,21 @@
       toggleBtn.onclick = function () {
       dropDown.classList.toggle('open');
       };
+
+      document.addEventListener('DOMContentLoaded', function() {
+      const deadline = new Date('2024-05-30'); // Set your deadline here
+      const totalDuration = 24 * 60 * 60 * 1000; // Example: 24 hours before deadline
+
+      function updateOpacity() {
+      const now = new Date();
+      const timeLeft = deadline - now;
+      const opacity = Math.max(0.1, timeLeft / totalDuration); // Ensures opacity doesn't go below 0.1
+      document.body.style.opacity = opacity;
+      requestAnimationFrame(updateOpacity); // Continuously update opacity
+      }
+
+     updateOpacity();
+    });
     </script>
 </body>
 </html>
